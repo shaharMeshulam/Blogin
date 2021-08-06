@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Blogin.</title>
+</head>
+
+<body>
+    <div class="screen" onclick="onToggleMenu()"></div>
+    <div class="modal-container flex justify-center align-center">
+        <div class="screen" onclick="onToggleModal()"></div>
+        <div class="modal flex justify-center align-center">
+            <div class="modal-body">
+                <h2>Duis aute irure dolor in henderit in voluptate.</h2>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo
+                    doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    <br /><br />
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur...
+                </p>
+                <h3>Join us to get access to the latest stories!</h3>
+            </div>
+            <input type="email" name="email" placeholder="Enter your email"/>
+            <div class="modal-actions">
+                <button class="btn btn-submit" onclick="onToggleModal()">Submit</button>
+                <button class="btn btn-close" onclick="onToggleModal()">Close</button>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div class="header main-layout flex space-between align-center">
+            <div class="header-logo flex align-center">
+                <img src="img/Logo.png">
+            </div>
+            <button class="toggle-menu" onclick="onToggleMenu()">
+                <span class="material-icons-outlined hamburger">
+                    menu
+                </span>
+                <span class="material-icons-outlined close">
+                    close
+                </span>
+            </button>
+            <nav class="main-nav flex">
+                <ul class="clear-list flex align-center">
+                    <li>
+                        <a class="flex justify-center align-center" href="#" onclick="onOpenDropdown(this)">Journal</a>
+                        <ul class="main-nav-dropdown clear-list flex direction-column">
+                            <li><a class="flex justify-center align-center" href="#">October 2016</a></li>
+                            <li><a class="flex justify-center align-center" href="#">January 2017</a></li>
+                            <li><a class="flex justify-center align-center" href="#">January 2017</a></li>
+                            <li><a class="flex justify-center align-center" href="#">April 2017</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="flex justify-center align-center" href="#" onclick="onToggleMenu()">About</a>
+                    </li>
+                    <li>
+                        <a class="flex justify-center align-center" href="#" onclick="onToggleMenu()">Works</a>
+                    </li>
+                    <li>
+                        <a class="flex justify-center align-center" href="#" onclick="onToggleMenu()">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main-content main-layout">
+        <article class="article flex">
+            <aside>
+                <img src="img/001.jpg">
+            </aside>
+            <div class="article-body flex direction-column space-between">
+                <div class="article-body-text">
+                    <h2>Duis aute irure dolor in henderit in voluptate.</h2>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo
+                        doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        <br /><br />
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur...
+                    </p>
+                </div>
+                <div class="actions">
+                    <button class="btn btn-continue" onclick="onToggleModal()"><span>Continue Reading</span></button>
+                </div>
+            </div>
+        </article>
+        <article class="article flex">
+            <aside>
+                <img src="img/002.jpg">
+            </aside>
+            <div class="article-body flex direction-column space-between">
+                <div class="article-body-text">
+                    <h2>Duis aute irure dolor in henderit in voluptate.</h2>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo
+                        doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        <br /><br />
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur...
+                    </p>
+                </div>
+                <div class="actions">
+                    <button class="btn btn-continue" onclick="onToggleModal()"><span>Continue Reading</span></button>
+                </div>
+            </div>
+        </article>
+        <article class="article flex">
+            <aside>
+                <img src="img/003.jpg">
+            </aside>
+            <div class="article-body flex direction-column space-between">
+                <div class="article-body-text">
+                    <h2>Duis aute irure dolor in henderit in voluptate.</h2>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo
+                        doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        <br /><br />
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur...
+                    </p>
+                </div>
+                <div class="actions">
+                    <button class="btn btn-continue" onclick="onToggleModal()"><span>Continue Reading</span></button>
+                </div>
+            </div>
+        </article>
+    </main>
+    <section class="pagination">
+        <div class="pagination-container main-layout flex space-between">
+            <button class="previous flex align-center">
+                <img src="img/gray-arrow-left.png">
+                <span>Previous</span>
+            </button>
+            <button class="next flex align-center">
+                <span>Next</span>
+                <img src="img/gray-arrow-right.png">
+            </button>
+        </div>
+    </section>
+    <footer class="flex align-center">
+        <div class="footer-container main-layout flex direction-column align-center">
+            <div class="logo">
+                <img src="img/logo-black.png" />
+            </div>
+            <div class="info">
+                © 2014 Blogin.com - All Rights Reserved - Find more free Templates at <a
+                    href="https://Pixelhint.com">Pixelhint.com</a>
+            </div>
+            <div class="social flex justify-center">
+                <div class="flex justify-center align-center">
+                    <img src="img/facebook.png">
+                </div>
+                <div class="flex justify-center align-center">
+                    <img src="img/tweeter.png">
+                </div>
+                <div class="flex justify-center align-center">
+                    <img src="img/be.png">
+                </div>
+                <div class="flex justify-center align-center">
+                    <img src="img/d.png">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function onToggleMenu() {
+            document.body.classList.toggle('menu-open');
+        }
+        function onToggleModal() {
+            document.body.classList.toggle('modal-open')
+        }
+        function onOpenDropdown(el) {
+            el.classList.toggle('drop-down-open')
+        }
+    </script>
+</body>
+
+</html>
