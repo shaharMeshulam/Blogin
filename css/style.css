@@ -276,6 +276,7 @@ header {
 
 .article .article-body p {
     margin-top: 0.75em;
+    letter-spacing: 0.034em;
 }
 
 .article .article-body button {
@@ -343,6 +344,7 @@ footer .info {
     text-align: center;
     font-size: 0.812rem;
     color: #a6a6a6;
+    letter-spacing: 0.045em;
 }
 
 /* social */
@@ -500,6 +502,6 @@ footer .info {
         margin-top: 0;
     }
     .article .article-body p {
-        margin-top: 3.75em;
+        margin-top: 3.05em;
     }
 }
