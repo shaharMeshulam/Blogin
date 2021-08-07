@@ -236,12 +236,10 @@ header {
 
 .main-nav > ul > li:first-child > a {
     border-inline-end: 6px solid #57c939;;
-    border-bottom: 0;
     color: #57c939;
 }
 
 .main-nav li a {
-    border-bottom: 0;
     border-inline-end: solid #1e1e1e 6px;;
     color: #fff;
     height: 65px;
@@ -289,6 +287,7 @@ header {
     font-family: lato-bold, sans-serif;
     font-size: 1rem;
     cursor: pointer;
+    margin-top: 15px;
 }
 
 .article .article-body button:hover {
@@ -408,7 +407,7 @@ footer .info {
     header {
         background-color: #292929;
         border-bottom: solid #1e1e1e 6px;
-        height: 130px;
+        height: 100px;
         padding: 0;
     }
     .header .toggle-menu {
@@ -439,7 +438,7 @@ footer .info {
     }
     .main-nav li a {
         border-inline-end: 1px;
-        height: 130px;
+        height: 100px;
         width: 130px;
     }
     .main-nav li:hover .main-nav-dropdown {
@@ -460,13 +459,11 @@ footer .info {
         flex-direction: row;
     }
     .article aside {
+        margin-bottom: 0;
         flex-basis: 120%;
     }
     .article .article-body {
         margin-inline-start: 40px;
-    }
-    .article .article-body button {
-        margin-top: 0;
     }
     .article .article-body p {
         margin-top: 0.55em;
@@ -484,6 +481,12 @@ footer .info {
     .main-layout {
         max-width: 980px;
     }
+    header {
+        height: 130px;
+    }
+    .main-nav li a {
+        height: 130px;
+    }
     .article {
         height: 307px;
     }
@@ -492,6 +495,9 @@ footer .info {
     }
     .article aside img {
         width: unset;
+    }
+    .article .article-body button {
+        margin-top: 0;
     }
     .article .article-body p {
         margin-top: 3.75em;
