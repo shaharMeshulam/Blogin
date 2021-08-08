@@ -337,6 +337,7 @@ footer {
     border-top: 1px solid #e1e0e0;
     background-color: #f8f8f8;
     height: 315px;
+    padding: 13px;
 }
 
 footer .info {
@@ -435,12 +436,15 @@ footer .info {
     .main-nav li {
         height: 100%;
         width: 100%;
-        flex-basis: 130px;
+        /* flex-basis: 130px; */
         border-inline-end: 1px solid #1e1e1e;
     }
     .main-nav li a {
         border-inline-end: 1px;
         height: 100px;
+        width: 130px;
+    }
+    .main-nav li .drop-down-open + .main-nav-dropdown {
         width: 130px;
     }
     .main-nav li:hover .main-nav-dropdown {
