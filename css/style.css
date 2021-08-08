@@ -291,20 +291,6 @@ header {
     margin-top: 15px;
 }
 
-.article .article-body button:hover {
-    border-color: #5cca3f;
-    color: #5cca3f;
-}
-
-.article .article-body button:hover span::after {
-    display: inline-block;
-    content: "";
-    background-image: url(../img/green-arrow.png);
-    width: 15px;
-    height: 7px;
-    margin-left: 10px
-}
-
 /* PAGINATION */
 .pagination-container {
     padding: 30px 0;
@@ -359,10 +345,6 @@ footer .info {
     background-color: #e5e5e5;
     transition: 0.6s;
     cursor: pointer;
-}
-
-.social > div:hover {
-    background-color: #516fad;
 }
 
 /* HELPERS */
@@ -447,8 +429,13 @@ footer .info {
     .main-nav li .drop-down-open + .main-nav-dropdown {
         width: 130px;
     }
-    .main-nav li:hover .main-nav-dropdown {
+    .main-nav li .main-nav-dropdown {
         display: flex;
+        opacity: 0;
+        transition: 0.6s;
+    }
+    .main-nav li:hover .main-nav-dropdown {
+        opacity: 1;
     }
     .main-nav li:first-child {
         border-inline-start: 1px solid #1e1e1e;
@@ -474,11 +461,35 @@ footer .info {
     .article .article-body p {
         margin-top: 0.55em;
     }
+    .article .article-body button:hover {
+        border-color: #5cca3f;
+        color: #5cca3f;
+    }
+    .article .article-body button span::after {
+        display: inline-block;
+        content: "";
+        background-image: url(../img/green-arrow.png);
+        width: 0;
+        height: 7px;
+        margin-left: 10px;
+        transition: 0.6s;
+    }
+    .article .article-body button:hover span::after {
+        display: inline-block;
+        content: "";
+        background-image: url(../img/green-arrow.png);
+        width: 15px;
+        height: 7px;
+        margin-left: 10px
+    }
     .pagination-container button {
         transition: transform 0.6s;
     }
     .pagination-container button:hover {
         transform: scale(1.3);
+    }
+    .social > div:hover {
+        background-color: #516fad;
     }
 }
 
