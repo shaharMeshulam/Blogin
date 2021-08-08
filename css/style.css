@@ -242,30 +242,30 @@ header {
     flex-basis: 65px;
 }
 
-.main-nav li .main-nav-dropdown {
+.main-nav .main-nav-dropdown {
     width: 130px;
     display: none;
 }
 
-.main-nav li .main-nav-dropdown > li:first-child {
+.main-nav .main-nav-dropdown > li:first-child {
     border-top: 1px solid #1e1e1e;
 }
 
-.main-nav li .main-nav-dropdown > li:last-child {
+.main-nav .main-nav-dropdown > li:last-child {
     border-bottom: none;
 }
 
-.main-nav li .drop-down-open + .main-nav-dropdown {
+.main-nav .drop-down-open + .main-nav-dropdown {
     width: 100%;
     display: flex;
 }
 
-.main-nav > ul > li:first-child > a {
+.main-nav .selected {
     box-shadow: inset -6px 0 #57c939;;
     color: #57c939;
 }
 
-.main-nav li a {
+.main-nav a {
     box-shadow: inset -6px 0 #1e1e1e;
     color: #fff;
     height: 65px;
@@ -351,8 +351,7 @@ header {
 footer {
     border-top: 1px solid #e1e0e0;
     background-color: #f8f8f8;
-    height: 315px;
-    padding: 13px;
+    padding: 77px 13px;
 }
 
 footer .info {
@@ -443,7 +442,6 @@ footer .info {
         width: auto;
     }
     .main-nav li {
-        /* flex-basis: 130px; */
         border-bottom: 0;
         border-inline-end: 1px solid #1e1e1e;
     }
@@ -453,28 +451,30 @@ footer .info {
         height: 100px;
         width: 130px;
     }
-    .main-nav li .drop-down-open + .main-nav-dropdown {
+    .main-nav .drop-down-open + .main-nav-dropdown {
         width: 130px;
     }
-    .main-nav li .main-nav-dropdown {
+    .main-nav .main-nav-dropdown {
+        pointer-events: none;
         position: absolute;
         display: flex;
         opacity: 0;
         transition: 0.6s;
     }
-    .main-nav li .main-nav-dropdown li {
+    .main-nav .main-nav-dropdown li {
         border-bottom: 1px solid #1e1e1e;
     }
-    .main-nav li .main-nav-dropdown a {
+    .main-nav .main-nav-dropdown a {
         box-shadow: none;
     }
     .main-nav li:hover .main-nav-dropdown {
+        pointer-events: unset;
         opacity: 1;
     }
     .main-nav li:first-child {
         border-inline-start: 1px solid #1e1e1e;
     }
-    .main-nav > ul > li:first-child > a {
+    .main-nav .selected {
         border-inline-end: 0;
         box-shadow: inset 0 -6px #57c939;
         color: #57c939;
