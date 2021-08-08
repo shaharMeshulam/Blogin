@@ -294,7 +294,7 @@ header {
 }
 
 .article .article-body p:first-of-type {
-    margin-top: 2.88em;
+    margin-top: 0.55em;
 }
 
 .article .article-body p {
@@ -493,9 +493,6 @@ footer .info {
     }
     .article .article-body {
         margin-inline-start: 40px;
-    }
-    .article .article-body p:first-of-type {
-        margin-top: 0.55em;
     }
     .article .article-body button:hover {
         border-color: #5cca3f;
